@@ -1,0 +1,18 @@
+//SPDX-License-Identifier: MIT
+pragma solidity 0.8.14;
+
+contract ExampleInt{
+    uint256 public MyUInt;//(2^256)-1
+    uint8 public MyUInt8 = 2**4; //16(0 to 255)
+    int public MyInt = -10;
+    function incrementUint8()public{
+        MyUInt8++;
+     }
+    function decrementInt()public{
+         MyInt--;
+     }
+    function setMyUInt(uint256 _MyUInt) public{
+        MyUInt = _MyUInt;
+    }
+
+}
